@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Dashboard
+            </title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="assets/style.css" rel="stylesheet" type="text/css">                
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script type="text/javascript" src="https://use.fontawesome.com/5560c64e3a.js"></script>
+            <script type="text/javascript" src="assets/script.js"></script>
+        </head>
+        <body>
+            <div id="wrapper">
+                <h1><i class="fa fa-tachometer"></i> Broadband Usage</h1>
+                <div id="refreshBtn"><i class="fa fa-refresh" id="refresh"></i></div>
+                <div class="clear"></div>
+                <div id="error">
+                    <i class="fa fa-warning red"></i> Could not fetch data from server
+                </div>
+                <div id="loading">
+                    <i class="fa fa-spin fa-cog"></i> working...
+                </div>
+                <div id="stats">
+                    <div class="card">
+                        <div class="donut-chart donut">
+                          <div class="slice one"></div>
+                          <div class="slice two"></div>
+                          <div class="chart-center">
+                            <span>88%</span>
+                          </div>
+                        </div>
+                    </div>                    
+                    
+                    <div id="verbose_desc">
+                        <div id="desc1">
+                            <strong>987MB</strong> remains of <strong>9045GB</strong>    
+                        </div>
+                        <div id="desc2">
+                            <strong>1132GB</strong> used of <strong>9045GB</strong>    
+                        </div>
+                        
+                        
+                    </div>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td><i class="fa fa-fw fa-user"></i> Login</td>
+                            <td id="login"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <i class="fa fa-fw fa-gift"></i> Package <br>
+                                <span id="package_name"></span>
+                            
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-fw fa-calendar-times-o"></i> Expires</td>
+                            <td id="package_expiry"></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-fw fa-calendar-check-o"></i> Last renewed</td>
+                            <td id="package_last_renewal"></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-fw fa-clock-o"></i> Request time</td>
+                            <td id="time_taken"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>            
+        </body>
+    </html>
